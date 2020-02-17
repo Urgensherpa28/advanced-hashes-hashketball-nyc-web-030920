@@ -223,8 +223,8 @@ def most_points_scored
   player
 end
 
-# def winning_team
-#   game_hash.each do |team, attributes|
-#     binding.pry
-#   end
-# end
+def winning_team
+  game_hash.each do |team, attributes|
+    binding.pry
+  end
+end
