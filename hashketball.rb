@@ -242,7 +242,7 @@ def winning_team
       end
     end
   
-      if away > home
+    if away > home
        return game_hash[:away][:team_name]
     elsif 
       home > away 
