@@ -226,8 +226,7 @@ end
 def winning_team 
   away = 0
   home = 0
-  hash = game_hash
-    hash[:home].each do |player_name, player_data|
+    game_hash.each do |player_name, player_data|
       player_data.each do |key, value|
         if key == [:points] 
           home = home + value
@@ -235,7 +234,7 @@ def winning_team
       end
     end
     
-  hash[:away].each do |player_name, player_data|
+  game_hash.each do |player_name, player_data|
     player_data.each do |key, value|
       if key == [:points]
         away = away + value
@@ -243,10 +242,10 @@ def winning_team
     end
   
     if away > home
-       return hash[:away][:team_name]
+       return game_hash[:away][:team_name]
     elsif 
       home > away 
-      return hash[:home][:team_name]
+      return game_hash[:home][:team_name]
     else 
       return "They tied!"
     end
