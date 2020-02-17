@@ -222,3 +222,7 @@ def most_points_scored
     end
   player
 end
+
+def winning_team
+  
+end
