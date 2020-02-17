@@ -228,6 +228,7 @@ def winning_team
   home = 0
     game_hash.each do |player_name, player_data|
       player_data.each do |key, value|
+        binding.pry
         if key == [:points] 
           home = home + value
         end
