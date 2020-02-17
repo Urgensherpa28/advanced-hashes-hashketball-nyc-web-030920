@@ -215,9 +215,8 @@ def most_points_scored
       attributes[:players].each do |stats|
         if stats[:points] > points_scored
           points_scored = stats[:points]
-          rebounds = stats[:rebounds]
         end
       end
     end
-  rebounds
+  points_scored
 end
