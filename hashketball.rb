@@ -243,10 +243,10 @@ def winning_team
     end
   
     if away > home
-       return game_hash[:away][:team_name]
+       return hash[:away][:team_name]
     elsif 
       home > away 
-      return game_hash[:home][:team_name]
+      return hash[:home][:team_name]
     else 
       return "They tied!"
     end
