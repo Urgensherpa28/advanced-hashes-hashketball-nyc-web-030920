@@ -215,8 +215,9 @@ def most_points_scored
       attributes[:players].each do |stats|
         if stats[:points] > points_scored
           points_scored = stats[:points]
+          player = stats[:player_name]
         end
       end
     end
-  points_scored
+  player
 end
