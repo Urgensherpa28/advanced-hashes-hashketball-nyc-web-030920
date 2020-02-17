@@ -225,6 +225,10 @@ end
 
 def winning_team
   game_hash.each do |team, attributes|
-    binding.pry
+    team.each do |winners|
+      if team[:players][:points] 
+        binding.pry
+      end 
+    end
   end
 end
