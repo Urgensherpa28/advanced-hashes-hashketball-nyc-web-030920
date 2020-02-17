@@ -226,7 +226,8 @@ end
 def winning_team 
   away = 0
   home = 0
-    game_hash[:home].each do |player_name, player_data|
+  hash = game_hash
+    hash[:home].each do |player_name, player_data|
       player_data.each do |key, value|
     if key == :points 
     home = home + value
